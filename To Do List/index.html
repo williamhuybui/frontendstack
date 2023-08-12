@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Connect javascript -->
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">To Do List
+            <span>Easy task organization for enhanced productivity.</span>
+        </h1>
+        <ul class="task-list">
+            <li draggable="true" class="item" >
+                <span class="label">Meeting with customer at 9 AM</span>
+                <div class="actions">
+                    <input type="checkbox" class="btn-action btn-action-done">
+                    <button class = "btn-action btn-action-delete"> x </button>
+                </div>
+            </li>
+            <li draggable="true" class="item" >
+                <span class="label">Leetcode</span>
+                <div class="actions">
+                    <input type="checkbox" class="btn-action btn-action-done">
+                    <button class = "btn-action btn-action-delete"> x </button>
+                </div>
+            </li>
+        </ul>
+        <div class="filter-wrapper">
+            <label for="filter" class="filter-label">Show incompleted tasks only</label>
+            <input type="checkbox" id = "filter">
+        </div>
+        <form action="#" class="form">
+            <label for="newitem">Add New Task</label>
+            <input type="text" id="newitem">
+            <button class="submit">Add</button>
+        </form>
+    </div>
+</body>
+</html>

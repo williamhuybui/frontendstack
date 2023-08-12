@@ -1,0 +1,103 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.hidden{
+  display: none;
+}
+
+.container{
+  width: 460px;
+  margin: auto;
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0. 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.title {
+  margin-bottom: 1rem;
+    text-align: center;
+}
+
+.input-group{
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.icon{
+  position: absolute;
+  top: 29.5px;
+  right: 5px;
+  pointer-events: none; /*prevents that element from receiving any user interaction through pointer events, such as clicking, hovering, or scrolling. */
+  z-index: 2; 
+}
+
+.label{
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  color: blue;
+  border: 1px solid #cbd5e0;
+  line-height: 1.25;
+  padding: 0.65rem 0.75rem;
+  border-radius: 5px;
+  box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+}
+.input::placeholder{
+  color: #a0aec0;
+}
+.input:focus, select:focus{
+  outline: none;
+  border: 1px solid #a0aec0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.error-message {
+  font-size: 0.85rem;
+  color: red;
+  /* position: absolute; */
+}
+
+.button {
+  background-color: #2980b9;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  display: block;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+.button:hover{
+  filter: brightness(110%);
+}
+
+.birthday-input{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#date, #month, #year{
+    /* margin-right: 10px; */
+    width: 80px;
+    height: 2.5rem;
+    color: #2d3748;
+    border: 1px solid #cbd5e0;
+    line-height: 1.25;
+    padding: 0.65rem 0.75rem;
+    border-radius: 5px;
+    box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+}

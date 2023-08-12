@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="title">Sign Up</h2>
+      <form action="#" class="form">
+        <div class="input-group">
+          <label for="username" class="label">Username</label>
+          <input
+            type="text"
+            id="username"
+            class="input"
+            placeholder="Your username"
+          />
+          <span class="error-message"></span>
+          <span class="icon icon-success hidden">✅</span>
+          <span class="icon icon-error hidden">❌</span>
+        </div>
+
+        <div class="input-group">
+          <label for="email" class="label">Email</label>
+          <input
+            type="text"
+            id="email"
+            class="input"
+            placeholder="Your email"
+          />
+          <span class="error-message"></span>
+          <span class="icon icon-success hidden">✅</span>
+          <span class="icon icon-error hidden">❌</span>
+        </div>
+
+        <div class="input-group">
+          <label for="password" class="label">Password</label>
+          <input type="password" id="password" class="input" />
+          <span class="error-message"></span>
+          <span class="icon icon-success hidden">✅</span>
+          <span class="icon icon-error hidden">❌</span>
+        </div>
+
+        <div class="input-group">
+          <label for="password-confirmation" class="label"
+            >Password Confirmation</label
+          >
+          <input type="password" id="password-confirmation" class="input" />
+          <span class="error-message"></span>
+          <span class="icon icon-success hidden">✅</span>
+          <span class="icon icon-error hidden">❌</span>
+        </div>
+
+        <div class="input-group">
+          <label class="label">Birthday</label>
+          <div class="birthday-input">
+            <label for="date">Day</label>
+            <select id="date" name="date"></select>
+
+            <label for="month">Month</label>
+            <select id="month" name="month"></select>
+
+            <label for="year">Year</label>
+            <select id="year" name="year"></select>
+          </div>
+          <span class="error-message"></span>
+        </div>
+
+        <button class="button">Create account</button>
+      </form>
+    </div>
+  </body>
+</html>

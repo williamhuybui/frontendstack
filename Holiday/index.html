@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Holiday Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class = "header">
+    <h1>Holiday Tracker</h1>
+  </div>
+  
+  <!-- Search -->
+  <div class="container">
+    <div class="search-container">
+    <div class="filter">
+      <h2>Query Options</h2>
+      <hr>
+      <div class="search-group">
+        <label for="search">Search: </label>
+        <input id="search" type="text" placeholder="Search" />
+      </div>
+      <!-- Year -->
+      <div class="select-group">
+        <label for="year">Year: </label>
+        <select name="year" id="year-select">
+          <option value="2022" selected>2022</option>
+        </select>
+      </div>
+
+      <!-- Month -->
+      <div class="select-group">
+        <label for="month">Month: </label>
+        <select name="month" id="month-select">
+        </select>
+      </div>
+
+      <!-- Day -->
+      <div class="select-group">
+        <label for="day">Day: </label>
+        <select name="day" id="day-select">
+        </select>
+      </div>
+
+      <!-- Country -->
+      <div class="select-group">
+        <label for="country">Country: </label>
+        <select name="country" id="country-select">
+        </select>
+      </div>
+
+      <!-- Language -->
+      <div class="select-group">
+        <label for="language">Language: </label>
+        <select name="language" id="language-select">
+        </select>
+      </div>
+    
+      <!-- other select groups here -->
+      <button type="submit" id = "search-btn">Search</button>
+  </div>
+  </div>
+  </div>
+
+  <div class="holiday-list">
+    <h2>Holidays of a Country</h3>
+      <hr>
+    <ul>
+      <li>
+          <div class="li-title">Holiday Name 1</div>
+          <div class="li-date">Wednesday - 2020-01-01</div>
+      </li>
+      <li>
+          <div class="li-title">Holiday Name 2</div>
+          <div class="li-date">Thursday - 2020-01-02</div>
+      </li>
+    </ul>
+  </div>
+
+  </section>
+  <script src="script.js"></script>
+</body>
+
+</html>
