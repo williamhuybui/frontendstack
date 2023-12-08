@@ -38,7 +38,7 @@ function App() {
         className="body"
         sx={{
           width: 300,
-          height: 550,
+          height: 600,
           bgcolor: "black",
           color: "white",
           borderRadius: 7,
